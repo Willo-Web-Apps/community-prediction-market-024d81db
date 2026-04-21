@@ -1,11 +1,73 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+<footer style="background: oklch(0.12 0.032 238); border-top: 1px solid oklch(0.95 0.005 240 / 0.07);">
+  <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+      <!-- Brand column -->
+      <div class="lg:col-span-1">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <div class="w-7 h-7 rounded flex items-center justify-center" style="background: oklch(0.76 0.16 65);">
+            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="oklch(0.12 0.035 235)">
+              <path d="M2 12l4-8 3 5 2-3 3 6H2z"/>
+            </svg>
+          </div>
+          <span class="font-display text-xl tracking-tight" style="color: oklch(0.95 0.005 240);">Presage</span>
+        </a>
+        <p class="font-body font-light text-sm leading-relaxed" style="color: oklch(0.60 0.020 240);">
+          The creator-first prediction market. Launch any market, earn 30% of every trade.
+        </p>
+        <div class="mt-5 flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full animate-pulse" style="background: oklch(0.76 0.16 65);"></span>
+          <span class="font-body text-xs font-medium" style="color: oklch(0.76 0.16 65 / 0.8);">Live on Polygon &amp; Base</span>
+        </div>
+      </div>
+
+      <!-- Product links -->
+      <div>
+        <div class="font-body text-xs font-semibold tracking-[0.15em] uppercase mb-4" style="color: oklch(0.60 0.020 240);">Product</div>
+        <ul class="space-y-3">
+          <li><a href="#how-it-works" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">How it works</a></li>
+          <li><a href="#features" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Features</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Browse markets</a></li>
+          <li><a href="#create" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Create a market</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources links -->
+      <div>
+        <div class="font-body text-xs font-semibold tracking-[0.15em] uppercase mb-4" style="color: oklch(0.60 0.020 240);">Resources</div>
+        <ul class="space-y-3">
+          <li><a href="/blog" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Blog</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Documentation</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Creator guide</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">API</a></li>
+        </ul>
+      </div>
+
+      <!-- Community links -->
+      <div>
+        <div class="font-body text-xs font-semibold tracking-[0.15em] uppercase mb-4" style="color: oklch(0.60 0.020 240);">Community</div>
+        <ul class="space-y-3">
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Twitter / X</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Farcaster</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Discord</a></li>
+          <li><a href="#" class="font-body text-sm transition-colors" style="color: oklch(0.72 0.015 240);">Governance</a></li>
+        </ul>
+      </div>
     </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4" style="border-top: 1px solid oklch(0.95 0.005 240 / 0.07);">
+      <p class="font-body text-xs" style="color: oklch(0.50 0.015 240);">&copy; {year} Presage. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="#" class="font-body text-xs transition-colors" style="color: oklch(0.50 0.015 240);">Privacy</a>
+        <a href="#" class="font-body text-xs transition-colors" style="color: oklch(0.50 0.015 240);">Terms</a>
+        <a href="#" class="font-body text-xs transition-colors" style="color: oklch(0.50 0.015 240);">Risk disclosure</a>
+      </div>
+    </div>
+
   </div>
 </footer>

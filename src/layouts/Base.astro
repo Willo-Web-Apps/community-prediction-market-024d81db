@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "polymarket but the events for the predictions are created by anyone and they can get 1% of fee from the liquidity pool or whatever you think is best from market landscape persective." } = Astro.props;
+const { title = "Presage — Predict anything. Earn your edge.", description = "Launch a prediction market in 60 seconds, earn 30% of every trade — the most creator-generous prediction market platform in crypto." } = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -23,13 +23,13 @@ const { title = "Your New Business", description = "polymarket but the events fo
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Your New Business",
-      "description": "polymarket but the events for the predictions are created by anyone and they can get 1% of fee from the liquidity pool or whatever you think is best from market landscape persective.",
+      "name": "Presage",
+      "description": "Launch a prediction market in 60 seconds, earn 30% of every trade — the most creator-generous prediction market platform in crypto.",
       "url": "https://community-prediction-market.onrender.com"
     }
     </script>
   </head>
-  <body class="min-h-screen flex flex-col bg-surface-50 text-surface-900 font-body antialiased">
+  <body class="min-h-screen flex flex-col font-body antialiased" style="background: oklch(0.13 0.035 240); color: oklch(0.95 0.005 240);">
     <Header />
     <main class="flex-1">
       <slot />
